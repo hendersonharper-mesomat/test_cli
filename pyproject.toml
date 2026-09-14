@@ -1,0 +1,19 @@
+[project]
+name = "test-cli"
+version = "0.1.0"
+description = "my first CLI tool"
+readme = "README.md"
+authors = [
+    { email = "henderson.harper@mesomat.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "typer>=0.27.2",
+]
+
+[project.scripts]
+testxd = "test_cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
